@@ -8,11 +8,11 @@ namespace ConsoleAppVersioneringDokumentering
 {
     public class Car
     {
-        public enum CarBrands{ Ford, Volvo, Toyota, Audi, BMW, Suzuki, Fiat, KIA, Ferrari, Koenigsegg, Porsche, Hyundai }
+        public enum CarBrand { Ford, Volvo, Toyota, Audi, BMW, Suzuki, Fiat, KIA, Ferrari, Koenigsegg, Porsche, Hyundai }
 
         public int HP { get; private set; }
         public int KM { get; private set; }
-        public CarBrands Brand { get; private set; }
+        public CarBrand Brand { get; private set; }
         public string Model { get; private set; }
 
         public Car()
@@ -20,7 +20,7 @@ namespace ConsoleAppVersioneringDokumentering
 
         }
 
-        public Car(string model, CarBrands brand, int hp)
+        public Car(string model, CarBrand brand, int hp)
         {
             Model = model;
             Brand = brand;
