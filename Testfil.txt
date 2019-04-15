@@ -1,1 +1,0 @@
-Dette er en test-fil, for at vise hvad .git kan gøre.
