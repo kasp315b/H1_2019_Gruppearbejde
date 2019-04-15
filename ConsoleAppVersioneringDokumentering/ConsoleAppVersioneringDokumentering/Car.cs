@@ -8,7 +8,7 @@ namespace ConsoleAppVersioneringDokumentering
 {
     public class Car
     {
-        public enum CarBrand { Ford, Volvo, Toyota, Audi, BMW, Suzuki, Fiat, KIA, Ferrari, Koenigsegg, Porsche, Hyundai }
+        public enum CarBrand { Unknown, Ford, Volvo, Toyota, Audi, BMW, Suzuki, Fiat, KIA, Ferrari, Koenigsegg, Porsche, Hyundai }
 
         public int HP { get; private set; }
         public int KM { get; private set; }
@@ -17,7 +17,10 @@ namespace ConsoleAppVersioneringDokumentering
 
         public Car()
         {
-
+            HP = 0;
+            KM = 0;
+            Brand = CarBrand.Unknown;
+            Model = "";
         }
 
         public Car(string model, CarBrand brand, int hp)
