@@ -16,6 +16,11 @@ namespace ConsoleAppVersioneringDokumentering
         public Program()
         {
             Console.WriteLine("Hello World");
+
+            Car myCar = new Car("Punto", Car.CarBrand.Fiat, 90);
+            myCar.Drive();
+
+            Console.ReadKey(true);
         }
     }
 }
