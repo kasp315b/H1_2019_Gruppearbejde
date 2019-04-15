@@ -24,6 +24,13 @@ namespace ConsoleAppVersioneringDokumentering
             HK = hk;
         }
         
-
+        public void Drive()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Wr");
+            for (int i = 0; i < HK; i++) sb.Append("o");
+            sb.Append("m!");
+            Console.WriteLine(sb.ToString());
+        }
     }
 }
