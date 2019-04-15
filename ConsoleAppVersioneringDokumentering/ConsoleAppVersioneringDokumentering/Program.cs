@@ -10,6 +10,12 @@ namespace ConsoleAppVersioneringDokumentering
     {
         static void Main(string[] args)
         {
+            new Program();
+        }
+
+        public Program()
+        {
+            Console.WriteLine("Hello World");
         }
     }
 }
