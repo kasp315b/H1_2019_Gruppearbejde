@@ -23,7 +23,7 @@ namespace ConsoleAppVersioneringDokumentering
                 Age = 25,
                 Car = myCar,
                 Name = "Something Something",
-                Team = Driver.Teams.KIA
+                Team =  Car.CarBrand.KIA
             };
             myDriver.Car.Honk();
 
