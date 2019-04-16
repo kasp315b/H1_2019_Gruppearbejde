@@ -18,7 +18,14 @@ namespace ConsoleAppVersioneringDokumentering
             Console.WriteLine("Hello World");
 
             Car myCar = new Car("Punto", Car.CarBrand.Fiat, 90);
-            myCar.Drive();
+            var myDriver = new Driver()
+            {
+                Age = 25,
+                Car = myCar,
+                Name = "Something Something",
+                Team = Driver.Teams.KIA
+            };
+            myDriver.Car.Honk();
 
             Console.ReadKey(true);
         }
