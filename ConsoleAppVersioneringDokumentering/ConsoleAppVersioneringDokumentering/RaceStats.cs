@@ -12,5 +12,9 @@ namespace ConsoleAppVersioneringDokumentering
         public TimeSpan TotalTime { get; set; }
         public List<TimeSpan> RoundTimes { get; set; }
         public int Rounds { get; set; }
+        public RaceStats()
+        {
+            RoundTimes = new List<TimeSpan>();
+        }
     }
 }
