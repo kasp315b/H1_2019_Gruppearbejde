@@ -19,6 +19,7 @@ namespace ConsoleAppVersioneringDokumentering
 
         public bool AddDriverToRace(Driver driver)
         {
+            Console.Clear();
             var response = false;
             if(driver.Car != null)
             {
@@ -34,8 +35,16 @@ namespace ConsoleAppVersioneringDokumentering
                     {
                     }
                 }
+                PrintDrivers();
             }
             return response;
+        }
+        private void PrintDrivers()
+        {
+            foreach (var driver in Drivers)
+            {
+                Console.WriteLine(driver.Name);
+            }
         }
     }
 }

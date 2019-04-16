@@ -10,7 +10,7 @@ namespace ConsoleAppVersioneringDokumentering
     {
         public Driver Driver { get; set; }
         public TimeSpan TotalTime { get; set; }
-        public List<TimeSpan> RoundTimes { get; set; }
+        public List<TimeSpan> RoundTimes { get; private set; }
         public int Rounds { get; set; }
         public RaceStats()
         {
