@@ -38,5 +38,20 @@ namespace ConsoleAppVersioneringDokumentering
             sb.Append("m!");
             Console.WriteLine(sb.ToString());
         }
+
+        public void Honk()
+        {
+            Console.Beep(500,2000);
+        }
+
+        public void Move()
+        {
+            KM = KM + 1;
+        }
+
+        public void Move(int kilometers)
+        {
+            KM = KM + kilometers;
+        }
     }
 }
