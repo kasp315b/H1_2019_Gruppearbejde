@@ -10,11 +10,11 @@ namespace ConsoleAppVersioneringDokumentering
     {
         public Driver Driver { get; set; }
         public TimeSpan TotalTime { get; set; }
-        public List<TimeSpan> RoundTimes { get; private set; }
-        public int Rounds { get; set; }
+        public List<TimeSpan> LapTime { get; private set; }
+        public int Laps { get; set; }
         public RaceStats()
         {
-            RoundTimes = new List<TimeSpan>();
+            LapTime = new List<TimeSpan>();
         }
     }
 }
