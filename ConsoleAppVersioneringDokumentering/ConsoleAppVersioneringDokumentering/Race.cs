@@ -10,11 +10,13 @@ namespace ConsoleAppVersioneringDokumentering
     {
         public List<Driver> Drivers { get; private set; }
         public List<RaceStats> LeaderBoard { get; private set; }
+        public int FinalLap { get; private set; }
 
         public Race()
         {
             Drivers = new List<Driver>();
             LeaderBoard = new List<RaceStats>();
+            FinalLap = 80;
         }
 
         public bool AddDriverToRace(Driver driver)

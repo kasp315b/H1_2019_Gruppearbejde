@@ -12,6 +12,7 @@ namespace ConsoleAppVersioneringDokumentering
         public TimeSpan TotalTime { get; set; }
         public List<TimeSpan> LapTime { get; private set; }
         public int Laps { get; set; }
+        public int LapProgress { get; set; }
         public RaceStats()
         {
             LapTime = new List<TimeSpan>();
