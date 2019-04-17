@@ -11,34 +11,39 @@ namespace ConsoleAppVersioneringDokumentering
         static void Main(string[] args)
         {
             //new Program();
-            var myRace = new Race();
+            var myRace = new Race(50);
             var addPlayer1 = myRace.AddDriverToRace(new Driver()
             {
                 Age = 25,
                 Name = "Sven Svenson",
                 Team = Car.CarBrand.Audi,
-                Car = new Car("A Model", Car.CarBrand.Audi, 230)
+                Car = new Car("A Model", Car.CarBrand.Audi, 230),
+                Ability = Driver.DrivingAbility.Expert
             });
             var addPlayer2 = myRace.AddDriverToRace(new Driver()
             {
                 Age = 25,
                 Name = "Jens Jensen",
                 Team = Car.CarBrand.Audi,
-                Car = new Car("A Model", Car.CarBrand.Audi, 230)
+                Car = new Car("A Model", Car.CarBrand.Audi, 230),
+                Ability = Driver.DrivingAbility.Expert
             });
             var addPlayer3 = myRace.AddDriverToRace(new Driver()
             {
                 Age = 25,
                 Name = "Lars Larsen",
-                Car = new Car("A Model", Car.CarBrand.Audi, 230)
+                Car = new Car("A Model", Car.CarBrand.Audi, 230),
+                Ability = Driver.DrivingAbility.Expert
             });
             var addPlayer4 = myRace.AddDriverToRace(new Driver()
             {
                 Age = 25,
                 Name = "Sven Svenson",
                 Team = Car.CarBrand.Audi,
-                Car = new Car("A Model", Car.CarBrand.Audi, 230)
+                Car = new Car("A Model", Car.CarBrand.Audi, 230),
+                Ability = Driver.DrivingAbility.Expert
             });
+            myRace.StartRace();
         }
 
         //public Program()
