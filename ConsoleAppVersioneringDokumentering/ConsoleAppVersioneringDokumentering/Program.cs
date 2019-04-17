@@ -10,6 +10,7 @@ namespace ConsoleAppVersioneringDokumentering
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("En Ændring.");
             //new Program();
             var myRace = new Race(50);
             var addPlayer1 = myRace.AddDriverToRace(new Driver()
