@@ -8,6 +8,7 @@ namespace ConsoleAppVersioneringDokumentering
 {
     public class Driver
     {
+        public enum Ability { Novice, Intermediate, Advanced, Expert}
         public int Age { get; set; }
         public Car Car { get; set; }
         public string Name { get; set; }
